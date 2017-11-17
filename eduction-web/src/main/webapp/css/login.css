@@ -1,0 +1,124 @@
+a{
+    text-decoration: none;
+}
+.con{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.con_img{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+    min-width: 1200px;
+    margin-bottom: 10px;
+    min-height: 530px;
+}
+.carousel-inner{
+    width: 100%;
+    overflow: hidden;
+}
+.item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.carousel-inner{
+    height: 100%;
+    min-height: 530px;
+}
+
+#login{
+    width: 320px;
+    height: 350px;
+    left: 66%;
+    min-height: 300px;
+    position: absolute;
+    top:25%;
+    border-radius:4px;
+    background: #fafbfc;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+.login_div{
+    overflow: hidden;
+    padding: 5px;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #EDEDED;
+    border-radius:4px;
+}
+.font_icon{
+    font-size:23px;
+    height: 28px;
+    color: #337ab7;
+    padding-top:2px;
+    padding-left: 5px;
+    width: 10%;
+}
+.login_in{
+    height:18px;
+    width: 80%;
+    border: none;
+    line-height: 18px;
+    font-size: 18px;
+    outline: none;
+    background: #fafbfc;
+    box-sizing: content-box;
+}
+#register{
+    text-decoration: none;
+    float: left;
+}
+#forgot{
+    text-decoration: none;
+    float: right;
+}
+
+.con_ul ul{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.con_ul ul li{
+    list-style-type: none;
+    width: 20%;
+    padding: 10px;
+    overflow: hidden;
+    float: left;
+}
+.bg{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #0dc2b3;
+}
+.bg_im{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #999999;
+    opacity: 0.8;
+    padding: 10px;
+    display: none;
+}
+
+#school{
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#school li{
+    width: 20%;
+    padding-right: 10px;
+}
+.tail{
+    width: 100%;
+    height: 80px;
+    background: #0dc2b3;
+    min-width: 1200px;
+    margin: 0 auto;
+}

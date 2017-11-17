@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eduction.iml" filepath="$PROJECT_DIR$/eduction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eduction-dao/eduction-dao.iml" filepath="$PROJECT_DIR$/eduction-dao/eduction-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eduction-model/eduction-model.iml" filepath="$PROJECT_DIR$/eduction-model/eduction-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eduction-service/eduction-service.iml" filepath="$PROJECT_DIR$/eduction-service/eduction-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eduction-utils/eduction-utils.iml" filepath="$PROJECT_DIR$/eduction-utils/eduction-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eduction-web/eduction-web.iml" filepath="$PROJECT_DIR$/eduction-web/eduction-web.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+    background:#f8f8f8 !important
+}
+.con{
+    width: 780px;
+    overflow: hidden;
+    min-height: 600px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #fff;
+}
+.tb{
+    width: 95%;
+    height: 100px;
+    margin: 10px auto;
+    background: url(../images/wenda_title_bg.png) repeat-x center;
+}
+.tb_he{
+    width: 70%;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    line-height: 60px;
+    padding-left: 20px;
+    font-weight: 400;
+    color: #07111B;
+    letter-spacing: 3px;
+}
+.wt{
+    width: 150px;
+    height: 50px;
+    float:left;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 50px;
+    background: #f01414;
+    border: none;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    color: #fff;
+}
+.fl{
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+}
+.bq{
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.bq_active{
+    color: red;
+}
+.bq:hover{
+    cursor: pointer;
+    color: darkred;
+}
+.bq_hr{
+    height: 2px;
+    margin-right: 20px;
+    color: #D9DDE1
+}
+.nr{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+.ques{
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    list-style-type: none;
+    border-bottom: 1px solid #D9DDE1;
+}
+.tx{
+    width: 10%;
+    overflow: hidden;
+    float: left;
+}
+.ques_wt{
+    width: 90%;
+    padding-left: 20px;
+    overflow: hidden;
+    float: left;
+}
+.name{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #787d82
+}
+.ms{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    font-size: 16px;
+}
+.question{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #14191e;
+}
+.question:hover{
+    text-decoration: none;
+    color: #14191e;
+}
+.question:link{
+    text-decoration: none;
+    color: #14191e;
+}
+.question:visited{
+    text-decoration: none;
+    color: #14191e;
+}
+.pagination{
+    margin-left: 20px;
+    margin-top: 0px;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
+
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <!-- 开启包扫描 -->
+    <context:component-scan base-package="com.h52mm.eduction.web.*">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+    </context:component-scan>
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                <property name="prefixJson" value="false" />
+                <property name="supportedMediaTypes" >
+                    <list>
+                        <value>text/html;charset=UTF-8</value>
+                    </list>
+                </property>
+                <property name="objectMapper">
+                    <bean class="com.fasterxml.jackson.databind.ObjectMapper">
+                        <!-- 处理responseBody 里面日期类型 -->
+                        <property name="dateFormat">
+                            <bean class="java.text.SimpleDateFormat">
+                                <constructor-arg type="java.lang.String" value="yyyy-MM-dd" />
+                            </bean>
+                        </property>
+                        <!-- 为null字段时不显示 -->
+                        <property name="serializationInclusion">
+                            <value type="com.fasterxml.jackson.annotation.JsonInclude.Include">NON_NULL</value>
+                        </property>
+                    </bean>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!-- 单独为webApplicationContext注入placeholder,以便Controller中注入变量 -->
+    <context:property-placeholder ignore-unresolvable="true" location="classpath:config-dev.properties"/>
+    <!-- 拦截器 -->
+   <!--<mvc:interceptors>-->
+         <!--<mvc:interceptor>-->
+             <!--<mvc:mapping path="/user/**"/>-->
+             <!--<mvc:mapping path="/department/**"/>-->
+             <!--<mvc:mapping path="/employee/**"/>-->
+             <!--<mvc:mapping path="/address/**"/>-->
+             <!--&lt;!&ndash;<mvc:mapping path="/weixin/**"/>&ndash;&gt;-->
+             <!--<mvc:mapping path="/associator/**"/>-->
+             <!--&lt;!&ndash;<mvc:mapping path="/datePrice/*"/>&ndash;&gt;-->
+             <!--<mvc:exclude-mapping path="/user/login"/>-->
+             <!--<mvc:exclude-mapping path="/user/verifycode"/>-->
+             <!--<bean class="com.lswd.youpin.web.interceptor.UserLoginInterceptor"/>-->
+         <!--</mvc:interceptor>-->
+     <!--</mvc:interceptors>-->
+
+    <!--拦截器-->
+    <!--<mvc:interceptors>-->
+        <!--<mvc:interceptor>-->
+            <!--<mvc:mapping path="/tenant/**"/>-->
+            <!--<mvc:mapping path="/canteen/**"/>-->
+            <!--<bean class="com.lswd.youpin.web.interceptor.LswdRequestInterceptor"/>-->
+        <!--</mvc:interceptor>-->
+    <!--</mvc:interceptors>-->
+    <mvc:resources mapping="/apidoc/**" location="/apidoc/"/>
+    <mvc:resources mapping="/angular-1.5.8/**" location="/angular-1.5.8/"/>
+    <mvc:resources mapping="/bootstrap/**" location="/bootstrap/"/>
+    <mvc:resources mapping="/bootstrap-date/**" location="/bootstrap-date/"/>
+    <mvc:resources mapping="/js/**" location="/js/"/>
+    <mvc:resources mapping="/css/**" location="/css/"/>
+    <mvc:resources mapping="/images/**" location="/images/"/>
+    <mvc:resources mapping="/font-awesome-4.7.0/**" location="/font-awesome-4.7.0/"/>
+    <mvc:resources mapping="/echarts/**" location="/echarts/"/>
+    <mvc:resources mapping="/video/**" location="/video/"/>
+    <mvc:resources mapping="/easyui/**" location="/easyui/"/>
+    <mvc:resources mapping="/kindeditor/**" location="/kindeditor/"/>
+    <!--配置文件上传的信息-->
+    <bean id="multipartResolver" class="com.h52mm.eduction.web.upload.CustomMultipartResolver">
+        <property name="maxUploadSize" value="3000000000"/>
+        <property name="maxInMemorySize" value="4096"/>
+        <property name="defaultEncoding" value="UTF-8"></property>
+    </bean>
+    <!--跨域处理-->
+    <mvc:cors>
+        <mvc:mapping path="/**"
+         allowed-origins="*"
+         allowed-methods="GET,PUT,POST,DELETE"
+         allowed-headers="Content-Type,x-requested-with,token,type,canteenId"
+         exposed-headers="token" allow-credentials="false"
+         max-age="3600" />
+    </mvc:cors>
+    <!--视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--<property name="contentType" value="text/html"/>-->
+        <property name="suffix" value=".jsp"/>
+        <property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView"/>
+    </bean>
+
+</beans>

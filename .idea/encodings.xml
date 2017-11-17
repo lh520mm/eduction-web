@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eduction-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eduction-model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eduction-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eduction-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eduction-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

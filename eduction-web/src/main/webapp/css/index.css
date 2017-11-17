@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #f8f8f8 !important;;
+}
+.con{
+    width: 100%;
+    overflow: hidden;
+}
+.con_div
+{
+    width: 1080px;
+    background: #f3f3f3;
+    overflow: hidden;
+    /*border-top-right-radius: 8px;*/
+    /*border-top-left-radius: 8px;*/
+    margin: 0px auto;
+}
+.con_div_fl{
+    width: 15%;
+    float: left;
+    overflow: hidden;
+}
+.con_div_fz{
+    width: 60%;
+    overflow: hidden;
+    float: left;
+}
+.con_div_fr{
+    width: 25%;
+    overflow: hidden;
+    float: left;
+    padding: 20px;
+}
+.con_div_ul{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+}
+.con_div_ul li{
+    list-style-type: none;
+    font-size: 14px;
+    color: #666666;
+    padding: 10px;
+}
+.con_div_ul li:hover{
+    color: #0dc2b3;
+    cursor: pointer;
+    font-weight: 400;
+}
+.tx{
+    width: 100%;
+    display: block;
+    height: 80px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.tx_div{
+    width: 80px;
+    position: absolute;
+    top:30px;
+    height: 80px;
+    left:35%;
+}
+.tx_img{
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 100%;
+}
+.ms_div{
+    overflow:hidden;
+    margin-bottom:20px;
+    width:100%;
+    background: #fff;
+}
+.ms_name{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 35px;
+    color: #0dc2b3;
+}
+.ms_nr{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ccc;
+}
+/*.tail{*/
+    /*width: 100%;*/
+    /*height: 80px;*/
+    /*background: #404145;*/
+    /*min-width: 1200px;*/
+    /*margin: 0 auto;*/
+/*}*/
+.pm{
+    width: 100%;
+    height: 120px;
+}
+.pm_tle{
+    font-size: 16px;
+    padding-left: 12px;
+    padding-top: 20px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #0dc2b3;
+}
+.pm_ms{
+    width: 100%;
+    padding-left: 10px;
+    border-bottom: 1px dashed #ccc;
+    border-top: 1px dashed #ccc;
+    overflow: hidden;
+}
+.pm_ms li{
+    list-style-type: none;
+    height: 100%;
+    padding-top:10px ;
+    float: left;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #3c3c3c;
+}
+.rw{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 300px;
+}
+.rw h2{
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #0dc2b3;
+    margin: 10px 5px;
+
+}
+
+.rw_ms{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    list-style-type: none;
+}
+.rw_ok{
+    width:15%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 80px;
+    background:#0dc2b3;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+.rw_ok:hover{
+    cursor: pointer;
+    background: #0791bb;
+}
+.bj{
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.bj_tel{
+    text-align: center;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 10px;
+    color: #666666;
+    font-weight: 400;
+}
+.bj_img{
+    width: 126px;
+    height: 126px;
+    background: url(../images/new_rgt_icon.png) no-repeat 0 0;
+    margin: 0 auto;
+}
+.bj_mc{
+    text-align: center;
+    height: 40px;
+    font-size: 36px;
+    line-height: 40px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom:0px;
+    font-weight: 700;
+    width: 100%;
+}
+.bj_ms{
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+}
+.bj_success{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: #0dc2b3;
+}
+.info_ul{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 20px;
+    min-height: 420px;
+}
+.info_ul>li{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid #ececec;
+    list-style-type: none;
+}
+.info_nr{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.info_nr>img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: left;
+}
+.info_nr>div{
+    width: 300px;
+    height: 60px;
+    margin-left: 20px;
+    float: left;
+}
+.info_nr>div>p{
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}

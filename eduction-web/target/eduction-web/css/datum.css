@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.con{
+    width: 1080px;
+    overflow: hidden;
+    min-height: 800px;
+    margin: 0 auto;
+}
+.nr{
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+.tb{
+    text-align: center;
+}
+.ms{
+    text-align: center;
+}

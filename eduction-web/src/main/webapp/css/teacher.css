@@ -1,0 +1,93 @@
+.con{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.con_img{
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.teacher{
+    width: 100%;
+    min-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.teacher_d{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.teacher_ul{
+    width: 100%;
+    overflow: hidden;
+}
+.teacher_ul li{
+    list-style-type: none;
+    width: 25%;
+    padding: 20px;
+    height: 400px;
+    float: left;
+}
+.teacher_im{
+    width: 100%;
+    height: 100%;
+    background: #E8ECF6;
+    border-radius: 4px;
+}
+.teacher_pic{
+    width: 50%;
+    border-radius: 50%;
+    margin: 0px auto;
+    display: block;
+    padding-top: 15px;
+}
+.teacher_name{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.teacher_work{
+    text-align: center;
+    font-size: 16px;
+    color: #99A0B4;
+    line-height: 16px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.teacher_ms{
+    width: 100%;
+    background: #0dc2b3;
+    height: 80px;
+    margin-top: 56px;
+    clear: both;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.teacher_msp{
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+}
+.team{
+    width: 100%;
+    overflow: hidden;
+}
+.team_li{
+    list-style-type: none;
+    width: 25%;
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+}
+
+.tail{
+    width: 100%;
+    height: 80px;
+    background: #0dc2b3;
+    min-width: 1200px;
+    margin: 0 auto;
+}

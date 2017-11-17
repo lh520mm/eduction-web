@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.con{
+    width: 1080px;
+    margin: 0 auto;
+    min-height: 600px;
+    overflow: hidden;
+}
+.con_bj{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+    background:#fff;
+    border-top-left-radius:4px;
+    border-top-right-radius: 4px;
+}
